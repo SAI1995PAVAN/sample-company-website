@@ -1,0 +1,97 @@
+.pricing-block {
+  width: 100%;
+  margin-top: 5em;
+}
+
+.pricing-block .pricing-container {
+  max-width: 1240px;
+  margin: auto;
+  padding: 3em;
+}
+
+.pricing-block .pricing-container .upper-body .pricing {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 3em;
+  /* margin: auto; */
+}
+
+.pricing-block .pricing-container .upper-body .pricing h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+}
+
+.pricing-block .pricing-container .upper-body .pricing h1 span {
+  color: blue;
+}
+
+.pricing-block .pricing-container .upper-body .pricing p {
+  color: var(--grey);
+}
+
+.pricing-block .pricing-container .upper-body .pricing button {
+  padding: 0.5em 5em;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 0.25em;
+}
+
+.pricing-block .pricing-container .lower-body {
+  margin: 2em 0;
+  display: flex;
+  width: 100%;
+}
+
+.pricing-block .pricing-container .lower-body .left {
+  width: 30%;
+  padding-right: 2em;
+}
+
+.pricing-block .pricing-container .lower-body .left h3 {
+  color: var(--primary);
+}
+
+.pricing-block .pricing-container .lower-body .left h2 {
+  color: black;
+  font-weight: bold;
+}
+
+.pricing-block .pricing-container .lower-body .left p {
+  color: var(--grey);
+}
+
+.pricing-block .pricing-container .lower-body .left h3,
+.pricing-block .pricing-container .lower-body .left h2,
+.pricing-block .pricing-container .lower-body .left p {
+  padding-bottom: 1em;
+}
+
+.pricing-block .pricing-container .lower-body .left p {
+  text-align: justify;
+}
+
+.pricing-block .pricing-container .lower-body .right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 960px) {
+  .pricing-block .pricing-container .upper-body .pricing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pricing-block .pricing-container .upper-body .pricing button {
+    width: 100%;
+    margin-top: 1em;
+  }
+
+  .pricing-block .pricing-container .lower-body {
+    display: none;
+  }
+}
